@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+
+
+
+{% block main %}
+<link rel="stylesheet" type="text/css" href="/static/css/app.css">
+
+<h1 class="page-header">Profile</h1>
+
+
+<div class="pic"><img src="{{url_for('static',filename='pic.jpg')}}"></image></div>
+<div class ="rox">
+    <div id="r"><p><strong>Roxann Mowatt</strong></p></div>
+    <p class="other">Today's date is {{date}}</p>
+    <div id="data">
+    <p>Username: Roxie-Dan</p>
+    <p>ID Number: 620076196</p>
+    <p>Age: 21</p>
+    <p>General: Male</p>
+    </div>
+    <div><p class ="other">I Love Blue</p>  </div>
+</div>
+{% endblock %}
